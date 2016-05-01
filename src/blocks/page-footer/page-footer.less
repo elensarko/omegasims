@@ -4,5 +4,61 @@
 
 
 .page-footer {
+  &__inner {
+    .container();
+    .padding-top(xl);
+    .padding-bottom(lg);
 
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  &__cooperate {
+    .margin-bottom(sm);
+
+    font-size: @font-size--small;
+    padding-top: 10px;
+    line-height: 1.6;
+  }
+
+  &__contact-us{
+    color: @gray;
+  }
+
+  &__social {
+    .margin-bottom(sm);
+
+    svg {
+      margin: 10px;
+    }
+
+    a {
+      font-size: @font-size--small;
+      color: @text-color;
+    }
+  }
+
+  &__social-name{
+    display: none;
+  }
+
+  &__nav {
+    .margin-bottom(sm);
+
+    .main-nav__list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .main-nav__link {
+      color: @text-color;
+      padding-top: 0.8em;
+    }
+  }
 }

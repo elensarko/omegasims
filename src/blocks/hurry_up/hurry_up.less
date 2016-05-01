@@ -1,0 +1,32 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/hurry_up/hurry_up.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.hurry-up {
+  background: #F5F5F5;
+  text-align: center;
+
+  &__inner {
+    .container();
+    .padding-top(lg);
+    .padding-bottom(lg);
+  }
+
+  &__title {
+    font-size: (@font-size--h2 - 7);
+  }
+
+  &__text {
+    .margin-bottom(xl);
+    line-height: 1.6;
+
+    br {
+      .hidden-down(sm);
+    }
+  }
+
+  .btn {
+    .margin-bottom(md);
+  }
+}

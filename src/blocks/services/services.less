@@ -1,0 +1,26 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/services/services.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.services {
+  text-align: center;
+
+  &__inner {
+    .container();
+    .padding-top(xxl);
+    .padding-bottom(xl);
+
+  }
+
+  &__img {
+    min-height: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    .margin-bottom(md);
+  }
+}

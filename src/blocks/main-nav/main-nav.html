@@ -5,4 +5,26 @@
 @ @include('blocks/main-nav/main-nav.html')
 
 -->
-<div class="main-nav">content</div>
+<div class="main-nav">
+    <div class="navbar">
+        <div class="navbar__inner">
+            <div class="navbar__left">
+                @@include('../../blocks/logo/logo.html')
+                <a class="btn navbar__btn" href="#">Sign Up</a>
+
+                <a class="navbar__toggler" href="#main-nav-wrapper" data-toggle="collapse" data-toggle-this-class="navbar__toggler--open" aria-controls="main-nav-wrapper" aria-expanded="false">
+                    <span class="navbar__toggler-icon"></span>
+                </a>
+            </div>
+            <div class="navbar__right">
+                <div class="navbar__slidable-content" id="main-nav-wrapper">
+                    <nav class="main-nav  navbar__nav">
+                        @@include('../../blocks/navbar/navbar.html', {"footer": false})
+                    </nav>
+                    <hr>
+                    <a class="btn" href="#">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

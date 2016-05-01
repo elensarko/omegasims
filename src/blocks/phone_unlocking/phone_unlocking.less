@@ -1,0 +1,54 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/phone_unlocking/phone_unlocking.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.phone_unlocking {
+  text-align: center;
+  background: linear-gradient(-45deg, #00A9A5, #0DD5D0);
+  position: relative;
+
+  &::after {
+    display: block;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    background: linear-gradient(to top, rgba(5, 185, 181, 1), rgba(5, 185, 181, 0));
+  }
+
+  &__inner {
+    .container();
+    .padding-top(xl);
+
+    position: relative;
+  }
+
+  &__title {
+    .margin-bottom(none);
+
+    font-size: (@font-size--h2 - 7);
+    color: @text-color--inverse;
+  }
+
+  &__text {
+    color: @text-color--inverse;
+  }
+
+  &__img {
+    margin-top: -30px;
+  }
+  
+  .btn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+}

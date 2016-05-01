@@ -6,5 +6,23 @@
 
 -->
 <footer class="page-footer">
-  page-footer
+  <div class="page-footer__inner">
+    <div class="page-footer__cooperate">
+      © 2016 Omega Sims – <a class="page-footer__contact-us">Contact Us</a><br/>
+      All Rights Reserved
+    </div>
+    <div class="page-footer__social">
+      <a href="#">
+        <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#post-facebook"></use></svg>
+        <span class="page-footer__social-name">tw</span>
+      </a>
+      <a href="#">
+        <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#post-twitter"></use></svg>
+        <span class="page-footer__social-name">fb</span>
+      </a>
+    </div>
+    <div class="page-footer__nav">
+      @@include('../../blocks/navbar/navbar.html', {"footer": true})
+    </div>
+  </div>
 </footer>

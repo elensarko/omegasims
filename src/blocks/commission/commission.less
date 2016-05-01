@@ -1,0 +1,50 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/commission/commission.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.commission {
+  text-align: center;
+  background: linear-gradient(to top right, #2C569C, #3D95E4);
+
+  &__inner {
+    .container();
+    .padding-top(xl);
+    .padding-bottom(xxl);
+  }
+
+  &__title {
+    .margin-bottom(md);
+
+    font-size: (@font-size--h2 - 7);
+    color: @text-color--inverse;
+    line-height: 1.3;
+  }
+
+  &__wrapper {
+    .margin-bottom(xxl);
+
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+
+  &__img {
+    .margin-bottom(md);
+
+    height: 86px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    .margin-bottom(md);
+
+    color: @text-color--inverse;
+  }
+
+  .btn {
+    .margin-bottom(md);
+  }
+}

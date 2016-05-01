@@ -1,0 +1,40 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/features/features.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.features {
+  background: #F1F5FB;
+  &__inner {
+    .container();
+    .padding-bottom(xxl);
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__description {
+    .margin-bottom(xl);
+
+    text-align: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    line-height: 1.6;
+  }
+
+
+  &__list {
+    list-style: none;
+    padding-left: 20%;
+
+    li {
+      margin-bottom: 1rem;
+
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}

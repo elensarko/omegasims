@@ -1,0 +1,42 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/index-header/index-header.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.index-header {
+  &__inner {
+    .container();
+    .padding-top(md);
+    .padding-bottom(md);
+
+    @media (min-width: @screen-md) {
+      .padding-bottom(xxl);
+      background-image: url('../brands/img/pos.png');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+    }
+  }
+
+  &__title {
+    color: @text-color--inverse;
+  }
+
+  &__text {
+    .margin-bottom(lg);
+
+    color: @text-color--inverse;
+    line-height: 1.6;
+    font-weight: lighter;
+  }
+
+  .btn {
+    .margin-bottom(lg);
+  }
+
+  &__img {
+    .hidden-up(md);
+
+    text-align: center;
+  }
+}

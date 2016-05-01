@@ -9,9 +9,17 @@
 </head>
 
 <body>
-@@include('blocks/page-header/page-header.html')
+@@include('blocks/page-header/page-header.html', {"index": true})
 
-<h1>Содержимое</h1>
+<main>
+    @@include('blocks/features/features.html')
+    @@include('blocks/we_didnt_stop/we_didnt_stop.html')
+    @@include('blocks/commission/commission.html')
+    @@include('blocks/sims/sims.html')
+    @@include('blocks/phone_unlocking/phone_unlocking.html')
+    @@include('blocks/services/services.html')
+    @@include('blocks/hurry_up/hurry_up.html')
+</main>
 
 @@include('blocks/page-footer/page-footer.html')
 @@include('_include/page_bottom.html')

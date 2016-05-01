@@ -1,0 +1,57 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/sims/sims.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.sims {
+  background: linear-gradient(-45deg, #FE9193, #E95B5E);
+
+  &__inner {
+    .container();
+    .padding-top(xxl);
+    .padding-bottom(lg);
+  }
+
+  &__wrapper {
+    .padding-top(sm);
+
+    @media (min-width: @screen-md) {
+      .padding-bottom(xxl);
+      background-image: url('../brands/img/sims.png');
+      background-repeat: no-repeat;
+      background-position: 90% 50%;
+      background-size: auto;
+    }
+  }
+
+  &__title {
+    .margin-bottom(none);
+
+    font-size: (@font-size--h2 - 7);
+    color: @text-color--inverse;
+  }
+
+  &__text {
+    .margin-bottom(lg);
+
+    color: @text-color--inverse;
+    font-size: @font-size--medium;
+    line-height: 1.4;
+  }
+
+  &__list {
+    .margin-bottom(md);
+
+    color: @text-color--inverse;
+
+    li {
+      line-height: 1.65;
+    }
+  }
+
+  &__img {
+    .hidden-up(md);
+
+    text-align: center;
+  }
+}

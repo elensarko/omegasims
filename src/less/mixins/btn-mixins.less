@@ -18,16 +18,17 @@
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  font-size: 1em;
+  font-size: @font-size--small;
   line-height: @line-height;
   text-decoration: none;
-  border: 1px solid;
+  border: none;
   box-sizing: border-box;
-  border-radius: @border-radius;
+  border-radius: none;
   min-height: 2.125em;
 
   &--hover,
   &:hover {
+    background: @link-bg--hover;
     text-decoration: none;
   }
 
@@ -56,25 +57,27 @@
 //  Примесь-генератор цветовых стилей
 //------------------------------------------------------------------------------
 
-.btn-color(@color: @text-color; @background: @gray-lighter; @border: @gray-lighter;) {
+.btn-color(@color: @gray-darker; @background: #FFE63A; @shadow: rgba(0,0,0,0.5);) {
   color: @color;
   background-color: @background;
-  border-color: @border;
+  -webkit-box-shadow:  0 11px 31px @shadow;
+  -moz-box-shadow:  0 11px 31px @shadow;
+  box-shadow:  0 11px 31px @shadow;
 
   &--hover,
   &:hover {
-    .btn-color--mod(@color; darken(@background, 10%); darken(@border, 12%));
+    .btn-color--mod(@color; darken(@background, 10%));
   }
 
   &--active,
   &:active,
   &:focus {
-    .btn-color--mod(@color; darken(@background, 15%); darken(@border, 17%));
+    .btn-color--mod(@color; darken(@background, 15%));
   }
 
   &--disabled,
   &:disabled {
-    .btn-color--mod(@color; @background; @border);
+    .btn-color--mod(@color; @background);
   }
 }
 
@@ -84,10 +87,9 @@
 //  Вспомогательная примесь-генератор цветовых стилей для disabled
 //------------------------------------------------------------------------------
 
-.btn-color--mod(@color; @background; @border) {
+.btn-color--mod(@color; @background) {
   color: @color;
   background-color: @background;
-  border-color: @border;
 }
 
 
@@ -100,11 +102,13 @@
 
   & when (@size = sm) {
     font-size: @font-size--small;
-    padding-top: round((@field-padding-top / 2), 2);
-    padding-bottom: round((@field-padding-bottom / 2), 2);
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
   }
 
   & when (@size = lg) {
-    font-size: @font-size--h3;
+    font-size: 19px;
+    padding-left: 4em;
+    padding-right: 4em;
   }
 }
