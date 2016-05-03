@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="css/style.min.css?v=6" rel="stylesheet" media="screen">
+    <link href="css/style.min.css?v=7" rel="stylesheet" media="screen">
 
     <script>
       // Маркер работающего javascript
@@ -58,7 +58,6 @@
                   <div class="navbar__slidable-content" id="main-nav-wrapper">
                       <nav class="main-nav  navbar__nav">
                           <ul class="main-nav__list">
-                              
                               <li class="main-nav__item ">
                                   <a href="sim_cards.html" class="main-nav__link">
                                       <span class="main-nav__link-text">SIM Cards</span>
@@ -104,17 +103,292 @@
         <div class="signup__inner">
             <div class="row">
                 <div class="col-lg-offset-2 col-lg-8">
-                    <div class="signup__title-wrapper">
-                        <h2 class="signup__title">Sign Up</h2>
+                    <h2 class="signup__title">Sign Up</h2>
 
-                        <p class="signup__text"> All Fields Required.</p>
+                    <p class="signup__text"> All Fields Required.</p>
+
+                    <div class="signup__form-wrapper" data-example-id="togglable-tabs">
+                        <ul id="myTabs" class="nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#business" id="business-tab" role="tab" data-toggle="tab" aria-controls="business"
+                                   aria-expanded="true">
+                                    Business Information
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#owner" role="tab" id="owner-tab" data-toggle="tab" aria-controls="owner">
+                                    Owner Information
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#done" role="tab" id="done-tab" data-toggle="tab" aria-controls="done">
+                                    Done
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                            <form action="" class="form  form--horizontal">
+                                <div role="tabpanel" class="tab-pane fade in active" id="business"
+                                     aria-labelledby="business-tab">
+
+                                    <div class="fields-group">
+                                        <legend>BUSINESS CORPORATE INFORMATION</legend>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Legal Business Name
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Type of Ownership
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Federal Tax ID
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Date Business Started
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Products/Services Sold
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Business Email Address
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Website
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="fields-group">
+                                        <legend>ADDRESS</legend>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Full Corporate Address
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                City
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                State
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Zip
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Phone #
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="fields-group  field-checkbox--custom">
+                                        <div class="field-checkbox--custom__inner">
+                                            <label class="field-checkbox__name">
+                                                <input class="field-checkbox__input" type="checkbox" checked="">
+                                                <span class="field-checkbox__name-text">Business DBA (Doing Business As) is the same as Business Corporatte Information</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="fields-group">
+                                        <legend>BUSINESS DBA</legend>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Business DBA Name
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                DBA Address
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                City
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                State
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Zip
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Phone#
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="field-actions">
+                                        <button class="btn btn--lg">Next</button>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="owner" aria-labelledby="owner-tab">
+
+                                    <div class="fields-group">
+                                        <legend>OWNERS INFORMATION</legend>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Owners Name
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Social Security
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Resident Address
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Phone#
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                City
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                State
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Zip
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                        <label class="field-text  fields-group__item">
+                                            <div class="field-text__name">
+                                                Date of Birth
+                                            </div>
+                                            <div class="field-text__input-wrap">
+                                                <input class="field-text__input" type="text" placeholder="">
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="field-actions">
+                                        <button class="btn btn--lg">Sign Up</button>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                            <div role="tabpanel" class="tab-pane fade" id="done" aria-labelledby="done-tab">
+                                <div class="signup__done">
+                                    <h4 class="signup__done-title">
+                                        Congratulation!
+                                    </h4>
+
+                                    <p class="signup__done-text">
+                                        Your request has been submitted.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
-
-            <iframe src="https://docs.google.com/forms/d/1rvbakwCLFIPhT_NFzX_wHOA6lKH0g8gukwIKElx5B3E/viewform?embedded=true"
-                    width="100%" height="750px" frameborder="0" marginheight="0" marginwidth="0">Loading...
-            </iframe>
 
         </div>
     </div>
@@ -138,13 +412,6 @@
     </div>
     <div class="page-footer__nav">
       <ul class="main-nav__list">
-          
-          <li class="main-nav__item ">
-              <a href="features.html" class="main-nav__link">
-                  <span class="main-nav__link-text">Features</span>
-              </a>
-          </li>
-          
           <li class="main-nav__item ">
               <a href="sim_cards.html" class="main-nav__link">
                   <span class="main-nav__link-text">SIM Cards</span>
