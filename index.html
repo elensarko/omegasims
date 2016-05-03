@@ -111,7 +111,27 @@
                 </div>
 
                 <div class="index-header__img">
-                    <img src="img/pos.png" width="515" height="409">
+                    <!--<img src="img/pos.png" width="515" height="409">-->
+                    <figure class="intro__image">
+                        <picture>
+                            <source
+                                    media="(min-width: 1200px)"
+                                    srcset="img/pos@1x.png 1200w,
+                        img/pos@2x.png 2x"
+                                    sizes="100vw">
+                            <source
+                                    media="(min-width: 700px) and (max-width: 1199px)"
+                                    srcset="img/pos@1x.png 700w,
+                        img/pos@2x.png 2x"
+                                    sizes="100vw">
+                            <source
+                                    srcset="img/pos.png 320w,
+                        img/pos@2x.png 2x,
+                        img/pos@3x.png 3x"
+                                    sizes="100vw">
+                            <img  src="img/pos.png" width="auto" height="100%" alt="pos">
+                        </picture>
+                    </figure>
                 </div>
             </div>
         </div>
