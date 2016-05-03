@@ -9,13 +9,13 @@
 </head>
 
 <body>
-@@include('blocks/page-header/page-header.html', {"index": false})
+@@include('blocks/page-header/page-header.html', {"index": false, "page": "pinless"})
 
 <main>
     @@include('blocks/pinles/pinles.html')
 </main>
 
-@@include('blocks/page-footer/page-footer.html')
+@@include('blocks/page-footer/page-footer.html', {"page": "pinless"})
 @@include('_include/page_bottom.html')
 </body>
 </html>

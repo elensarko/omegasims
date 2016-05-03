@@ -1,0 +1,28 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/e-pins-brends/e-pins-brends.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.e-pins-brands {
+  background: #F5F5F5;
+  &__inner {
+    .container();
+    .padding-top(lg);
+    .padding-bottom(lg);
+
+    padding-left: 6%;
+    padding-right: 6%;
+    text-align: center;
+  }
+
+  &__title {
+    .margin-bottom(lg);
+  }
+
+  &__text {
+    .margin-bottom(xl);
+
+    color: #2DCCFD;
+    font-weight: 300;
+  }
+}

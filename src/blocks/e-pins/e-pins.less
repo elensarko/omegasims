@@ -1,0 +1,48 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/e-pins/e-pins.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.e-pins {
+  &__inner {
+    .container();
+    .padding-top(md);
+    .padding-bottom(lg);
+
+    text-align: center;
+  }
+
+  &__title {
+    .margin-bottom(none);
+  }
+
+  &__text {
+    .margin-bottom(xl);
+  }
+
+  .row {
+    .margin-bottom(xl);
+  }
+
+  &__list {
+
+    text-align: left;
+    list-style: none;
+    padding-left: 25px;
+
+    li {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    svg {
+      position: absolute;
+      top: 2px;
+      left: -25px;
+    }
+  }
+
+  .btn {
+    .margin-bottom(xl);
+  }
+}

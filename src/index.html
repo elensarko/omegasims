@@ -9,7 +9,7 @@
 </head>
 
 <body>
-@@include('blocks/page-header/page-header.html', {"index": true})
+@@include('blocks/page-header/page-header.html', {"index": true, "page": "index"})
 
 <main>
     @@include('blocks/features/features.html')
@@ -21,7 +21,7 @@
     @@include('blocks/hurry_up/hurry_up.html')
 </main>
 
-@@include('blocks/page-footer/page-footer.html')
+@@include('blocks/page-footer/page-footer.html', {"page": "index"})
 @@include('_include/page_bottom.html')
 </body>
 </html>

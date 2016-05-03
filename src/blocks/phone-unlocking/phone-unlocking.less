@@ -1,0 +1,73 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/phone-unlocking/phone-unlocking.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.phone-unlocking {
+  &__inner {
+    .container();
+    .padding-top(md);
+    .padding-bottom(md);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__text {
+    .margin-bottom(lg);
+
+    text-align: center;
+    line-height: 1.65;
+  }
+
+  &__list {
+    .padding-top(sm);
+    .margin-bottom(xl);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      .margin-bottom(sm);
+
+      position: relative;
+      margin-left: 30px;
+    }
+
+    svg {
+      position: absolute;
+      top: 2px;
+      left: -25px;
+    }
+
+    border-top: 1px solid @gray-lighter;
+    border-bottom: 1px solid @gray-lighter;
+  }
+
+  &__slide {
+    .padding-top(md);
+  }
+
+  &__slide-title {
+    .margin-bottom(md);
+  }
+
+  &__slide-text {
+    .margin-bottom(lg);
+
+    font-size: @font-size--small;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+
+  @media (max-width: @screen-md) {
+    text-align: center;
+  }
+}

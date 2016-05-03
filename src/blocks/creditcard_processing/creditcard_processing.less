@@ -1,0 +1,59 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/creditcard_processing/creditcard_processing.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.creditcard_processing {
+  &__inner {
+    .container();
+    .padding-top(md);
+    .padding-bottom(md);
+
+    text-align: center;
+  }
+
+  &__title-wrapper {
+    .margin-bottom(xxl);
+
+    border-bottom: 1px solid @gray-lighter;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  &__text {
+    .margin-bottom(lg);
+
+    text-align: center;
+    line-height: 1.65;
+  }
+
+  &__wrapper {
+    .margin-bottom(lg);
+    position: relative;
+    text-align: left;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__description {
+    margin-left: 70px;
+    font-weight: 300;
+
+    &-title {
+      font-weight: normal;
+    }
+  }
+
+  .btn {
+    .margin-top(lg);
+    .margin-bottom(lg);
+  }
+}

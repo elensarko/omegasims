@@ -1,0 +1,172 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/signup/signup.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.signup {
+  &__inner {
+    .container();
+    .padding-top(md);
+    .padding-bottom(sm);
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    .margin-bottom(lg);
+    text-align: center;
+  }
+
+  &__form-wrapper {
+    .padding-top(sm);
+  }
+
+  fieldset {
+    border-bottom: 1px solid @gray-lighter;
+  }
+
+  legend {
+    .margin-bottom(md);
+
+    font-size: 14px;
+    color: #3582B4;
+    font-weight: 300;
+  }
+
+  .fields-group{
+    .padding-bottom(md);
+    .margin-bottom(md);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid @gray-lighter;
+  }
+
+  .field-text__name,
+  .field-checkbox__name-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #64676B;
+  }
+
+  .form--horizontal .field-text__name {
+    width: 12em;
+  }
+
+  .field-checkbox--custom__inner {
+    padding: 0.6em 20px 0.6em 10.5em;
+  }
+
+  .field-actions {
+    .padding-top(sm);
+    text-align: center;
+  }
+
+  &__done {
+    .padding-top(xl);
+    .padding-bottom(xl);
+
+    text-align: center;
+  }
+}
+
+// Tabs
+// -------------------------
+
+// Give the tabs something to sit on
+.nav-tabs {
+  border-bottom: 1px solid @gray-lighter;
+  list-style: none;
+  padding-left: 0;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  > li {
+    padding-top: 0.1em;
+    padding-bottom: 1em;
+    position: relative;
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    // Make the list-items overlay the bottom border
+    margin-bottom: -1px;
+
+    &:not(:last-of-type)::after {
+      content: "";
+      display: block;
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-top: 1px solid @gray-lighter;
+      border-right: 1px solid @gray-lighter;
+      transform: rotate(45deg) skew(20deg, 20deg);
+    }
+
+    // Actual tabs (as links)
+    > a {
+      color: @gray-lighter;
+      margin-right: 2px;
+      line-height: @line-height;
+      text-decoration: none;
+
+      &:before {
+        content: "1";
+        display: inline-block;
+        width: (@line-height + 0.2);
+        height: (@line-height + 0.2);
+        vertical-align: baseline;
+        color: #7A7A7A;
+        background: #E4E4E4;
+        border-radius: 5px;
+        padding: 2px;
+        margin-right: 0.5em;
+      }
+    }
+
+    &:nth-of-type(2) a:before {
+      content: "2";
+    }
+
+    &:nth-of-type(3) a:before {
+      content: "3";
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @text-color;
+        cursor: default;
+
+        &:before {
+          color: @text-color;
+          background: #FFE63A;
+        }
+      }
+    }
+  }
+}
+
+// Tabbable tabs
+// -------------------------
+
+// Hide tabbable panes to start, show them when `.active`
+.tab-content {
+  .padding-top(sm);
+  padding-left: 7%;
+  padding-right: 7%;
+
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
+}

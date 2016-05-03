@@ -6,7 +6,7 @@
 
 -->
 <header class="page-header">
-  @@include('../../blocks/main-nav/main-nav.html')
+  @@include('../../blocks/main-nav/main-nav.html', {"page": "@@page"})
   @@if (index) {
     @@include('../../blocks/index-header/index-header.html')
   }

@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
-    <title>check</title>
+    <title>Shape</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.9">
-        <g id="sim" transform="translate(-314.000000, -368.000000)" fill="#1BCD4D">
-            <g id="benefits" transform="translate(314.000000, 364.000000)">
-                <g id="Group-4">
-                    <g id="check" transform="translate(0.000000, 4.000000)">
-                        <g id="Shape">
-                            <polygon points="6 11.2 1.8 7 0.4 8.4 6 14 18 2 16.6 0.6"></polygon>
-                        </g>
-                    </g>
-                </g>
-            </g>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="unlocking" transform="translate(-197.000000, -451.000000)" fill="#1BCD4D">
+            <polygon id="Shape" points="202.6 461.6 198.4 457.4 197 458.8 202.6 464.4 214.6 452.4 213.2 451"></polygon>
         </g>
     </g>
 </svg>
