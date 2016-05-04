@@ -1,7 +1,5 @@
 // Для импорта в диспетчер подключений: @import './src/blocks/signup/signup.less';
-
-@import '../../less/variables.less';     // только для удобства обращения к переменным
-
+@import '../../less/variables.less'; // только для удобства обращения к переменным
 
 .signup {
   &__inner {
@@ -35,7 +33,7 @@
     font-weight: 300;
   }
 
-  .fields-group{
+  .fields-group {
     .padding-bottom(md);
     .margin-bottom(md);
     padding-left: 20px;
@@ -56,6 +54,10 @@
 
   .field-checkbox--custom__inner {
     padding: 0.6em 20px 0.6em 10.5em;
+
+    @media (max-width: @screen-md) {
+      padding: 0;
+    }
   }
 
   .field-actions {
