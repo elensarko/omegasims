@@ -41,7 +41,7 @@ const port = process.env.port ? process.env.port : 3000;
 
 // Файлы компилируемых компонентов
 let blocks = getComponentsFiles();
-console.log(blocks)
+
 // Вывод в консоль информации о взятых в сборку файлах (без LESS)
 if(blocks.js.length) {
   console.log('---------- В сборку и обработку взяты JS-файлы:');

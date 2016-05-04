@@ -1,31 +1,40 @@
-/*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+$('#owner').hide();
+$('#done').hide();
 
-/*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=f5ed846892350fbdc1cb123a6fa58737)
- * Config saved to config.json and https://gist.github.com/f5ed846892350fbdc1cb123a6fa58737
- */
-if (typeof jQuery === 'undefined') {
-    throw new Error('Bootstrap\'s JavaScript requires jQuery')
-}
-+function ($) {
-    'use strict';
-    var version = $.fn.jquery.split(' ')[0].split('.')
-    if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 2)) {
-        throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 3')
+$('.button-next').click(function() {
+    $('#business-tab').parent().removeClass('active');
+    $('#owner-tab').parent().addClass('active');
+    $('#business').hide();
+    $('#owner').show();
+    return false;
+});
+
+$('form').submit(function() {
+    var form = $('form').serializeArray();
+
+    // todo send
+    console.log('Sending form', form);
+
+    $('#owner-tab').parent().removeClass('active');
+    $('#done-tab').parent().addClass('active');
+    $('#owner').hide();
+    $('#done').show();
+    return false;
+});
+
+function processDbaBlock() {
+    if ($('input[name=dba]').is(':checked')) {
+        $('.dba-block').hide();
     }
-}(jQuery);
+    else {
+        $('.dba-block').show();
+    }
+}
 
-/* ========================================================================
- * Bootstrap: tab.js v3.3.6
- * http://getbootstrap.com/javascript/#tabs
- * ========================================================================
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
+processDbaBlock();
+$('input[name=dba]').change(processDbaBlock);
+
+/*
 
 
 +function ($) {
@@ -178,6 +187,6 @@ if (typeof jQuery === 'undefined') {
 
 
 $('#myTabs a').click(function (e) {
-    e.preventDefault()
-    $(this).tab('show')
-})
+    e.preventDefault();
+    $(this).tab('show');
+})*/
