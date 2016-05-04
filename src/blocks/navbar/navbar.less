@@ -1,7 +1,5 @@
 // Для импорта в диспетчер подключений: @import './src/blocks/navbar/navbar.less';
-
-@import '../../less/variables.less';     // только для удобства обращения к переменным
-
+@import '../../less/variables.less'; // только для удобства обращения к переменным
 
 .navbar {
   padding-top: 1.3rem;
@@ -67,8 +65,8 @@
     user-select: none;
     cursor: pointer;
     color: @text-color;
-    background-color: @gray-lighter;
-    border: none;
+    background-color: transparent;
+    border: 1px solid #fff;
 
     @media (min-width: @screen-lg) {
       display: none;
@@ -101,7 +99,7 @@
     vertical-align: bottom;
     width: 100%;
     height: 3px;
-    background: currentColor;
+    background: #E5EAED;
     border-radius: 0.2rem;
     position: relative;
     transition: background 0.2s 0.2s;
@@ -110,7 +108,7 @@
     &:after {
       width: 100%;
       height: 3px;
-      background: currentColor;
+      background: #E5EAED;
       border-radius: 0.2rem;
       position: absolute;
       left: 0;
