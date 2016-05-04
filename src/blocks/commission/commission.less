@@ -24,8 +24,16 @@
   &__wrapper {
     .margin-bottom(xxl);
 
-    padding-left: 9%;
-    padding-right: 9%;
+    @media (min-width: @screen-md) {
+      padding-left: 9%;
+      padding-right: 9%;
+    }
+
+    @media (max-width: @screen-sm) {
+      .col-xs-6 {
+        flex: 0 0 50%;
+      }
+    }
   }
 
   &__img {
