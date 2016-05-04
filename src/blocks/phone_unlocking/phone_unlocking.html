@@ -16,7 +16,27 @@
         </p>
 
         <div class="phone_unlocking__img">
-            <img src="img/phone_unlocking.png" width="822" height="484">
+            <!--<img src="img/phone_unlocking.png" width="822" height="484">-->
+            <figure class="intro__image">
+                <picture>
+                    <source
+                            media="(min-width: 1200px)"
+                            srcset="img/phone_unlocking.png 1200w,
+                    img/phone_unlocking@2x.png 2x"
+                            sizes="100vw">
+                    <source
+                            media="(min-width: 700px) and (max-width: 1199px)"
+                            srcset="img/phone_unlocking.png 700w,
+                    img/phone_unlocking@2x.png 2x"
+                            sizes="100vw">
+                    <source
+                            srcset="img/phone_unlocking.png 320w,
+                    img/phone_unlocking@2x.png 2x,
+                    img/phone_unlocking@3x.png 3x"
+                            sizes="100vw">
+                    <img  src="img/phone_unlocking.png" width="822" height="484" alt="phone unlocking">
+                </picture>
+            </figure>
         </div>
 
         <a class="btn btn--lg" href="phone-unlocking.html">Learch more</a>

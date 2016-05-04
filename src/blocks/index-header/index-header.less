@@ -16,6 +16,14 @@
       background-position: right;
       background-size: contain;
     }
+    @media (min-width: @screen-lg) {
+      .padding-bottom(xxl);
+      background-image: url('../img/pos@2x.png');
+    }
+    @media (min-width: @screen-xl) {
+      .padding-bottom(xxl);
+      background-image: url('../img/pos@3x.png');
+    }
   }
 
   &__title {
@@ -39,9 +47,10 @@
 
     text-align: center;
 
-    img {
+    figure {
       width: 100%;
       height: auto;
+      margin: 0;
     }
   }
 }

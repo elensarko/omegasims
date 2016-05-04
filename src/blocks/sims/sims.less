@@ -20,7 +20,19 @@
       background-image: url('../img/sims.png');
       background-repeat: no-repeat;
       background-position: 90% 50%;
-      background-size: auto;
+      background-size: 400px;
+
+      //background-repeat: no-repeat;
+      //background-position: right;
+      //background-size: contain;
+    }
+    @media (min-width: @screen-lg) {
+      .padding-bottom(xxl);
+      background-image: url('../img/sims@2x.png');
+    }
+    @media (min-width: @screen-xl) {
+      .padding-bottom(xxl);
+      background-image: url('../img/sims@3x.png');
     }
   }
 
@@ -53,5 +65,11 @@
     .hidden-up(md);
 
     text-align: center;
+
+    figure {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
   }
 }
