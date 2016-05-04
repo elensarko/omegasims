@@ -183,7 +183,7 @@ gulp.task('js', function (callback) {
       .pipe(debug({title: "JS:"}))
       .pipe(gulpIf(isDev, sourcemaps.init()))
       .pipe(concat('script.min.js'))
-      .pipe(gulpIf(!isDev, uglify()))
+      //.pipe(gulpIf(!isDev, uglify()))
       .on('error', notify.onError(function(err){
         return {
           title: 'Javascript uglify error',
