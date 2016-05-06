@@ -60,8 +60,34 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 ::placeholder {
-  color: @text-color--muted;
+  color: @gray-lighter;
   opacity: 1;
+}
+
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field{
+  background-color: transparent;
+  color: #64676B;
+  opacity: 1;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-calendar-picker-indicator {
+  background-color: transparent;
+  color: @gray-lighter;
+}
+
+::-webkit-textfield-decoration-container {
+}
+
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
 textarea {
@@ -107,6 +133,7 @@ input[type='url'],
 input[type='search'],
 input[type='color'],
 input[type='tel'] {
+  color: #64676B;
   background-color: #fff;
   border: 1px solid #D0D0D0;
   display: inline-block;

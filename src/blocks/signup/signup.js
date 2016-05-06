@@ -9,6 +9,14 @@ $('.button-next').click(function() {
     return false;
 });
 
+$('.button-back').click(function() {
+    $('#owner-tab').parent().removeClass('active');
+    $('#business-tab').parent().addClass('active');
+    $('#owner').hide();
+    $('#business').show();
+    return false;
+});
+
 $('form').submit(function() {
     var form = $('form').serializeArray();
 
@@ -19,11 +27,11 @@ $('form').submit(function() {
     $('#done-tab').parent().addClass('active');
     $('#owner').hide();
     $('#done').show();
-    return false;
+    //return false;
 });
 
 function processDbaBlock() {
-    if ($('input[name=dba]').is(':checked')) {
+    if ($('input[name=DBA]').is(':checked')) {
         $('.dba-block').hide();
     }
     else {
@@ -32,4 +40,4 @@ function processDbaBlock() {
 }
 
 processDbaBlock();
-$('input[name=dba]').change(processDbaBlock);
+$('input[name=DBA]').change(processDbaBlock);
