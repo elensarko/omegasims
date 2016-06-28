@@ -1,0 +1,27 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/contact/contact.less';
+@import '../../less/variables.less'; // только для удобства обращения к переменным
+
+.contact {
+  &__inner {
+    .container();
+    .padding-top(md);
+    .padding-bottom(sm);
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  &__link {
+    font-size: 20px;
+    line-height: 29px;
+    color: #868A8B;
+    font-weight: lighter;
+  }
+}

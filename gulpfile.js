@@ -216,6 +216,13 @@ gulp.task('js:copy', function (callback) {
   }
 });
 
+// Копирование CNAME файла
+gulp.task('cname:copy', function () {
+  return gulp
+      .src('./src/CNAME')
+      .pipe(gulp.dest(dirs.build));
+});
+
 // Очистка папки сборки
 gulp.task('clean', function () {
   console.log('---------- Очистка папки сборки');
@@ -229,7 +236,7 @@ gulp.task('clean', function () {
 gulp.task('build', gulp.series(
   'clean',
   'svgstore',
-  gulp.parallel('less', 'copy:css', 'img', 'js', 'js:copy'),
+  gulp.parallel('less', 'copy:css', 'img', 'js', 'js:copy', 'cname:copy'),
   'html'
 ));
 
